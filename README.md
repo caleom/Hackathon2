@@ -1,7 +1,10 @@
 Rock, Paper, Scissors, Lizard, Spock 
+
+
 This project aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game. 
 
-Explanation of original Rock, Paper, Scissors:
+Explanation of the original classic game, original Rock, Paper, Scissors:
+
 Both players start by choosing either rock, paper, or scissors.
 If their choices are the same, it’s a tie.
 Otherwise, we check if Player 1’s choice beats Player 2’s choice to determine the winner.
