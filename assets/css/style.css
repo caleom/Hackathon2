@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+/* Google Fonts import */
+
+/* Asterisk wildcard selector/ overrides browser default styles */
+
+/* General style */
+
+/* Header */
+
+/* Main content */
+
+/* Footer */
+
+/* @ media queries */
+=======
 @font-face {
   font-family: WhaleITried;
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
@@ -52,3 +67,4 @@ footer {
 }
 
 
+>>>>>>> 29eb6ed7f4d722547fa5c7eccff70f7f5f5d393f
