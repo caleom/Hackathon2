@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Google Fonts import */
 
 /* Asterisk wildcard selector/ overrides browser default styles */
@@ -11,3 +12,59 @@
 /* Footer */
 
 /* @ media queries */
+=======
+@font-face {
+  font-family: WhaleITried;
+  src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
+}
+
+:root {
+  --primary: #4DB5FA;
+  --secondary: #ECC30B;
+  --dark: #251605;
+  --light: #FCFCFC;
+}
+
+h1{
+  font-family: WhaleItried;
+  font-size: 10rem;
+  color: var(--secondary);
+  text-shadow: 3px 3px var(--light);
+}
+
+body {
+  background-color: var(--primary);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  background-color: var(--dark);
+  color: var(--light);
+  line-height: 1.5rem;
+
+  & ul {
+    width: 100%;
+  }
+  
+
+  & li{
+    padding-inline: 1rem;
+  }
+
+  & a {
+    text-decoration: none;
+    color: var(--light);
+  }
+
+    & a::before {
+      font: var(--fa-font-solid);
+      content: '\f09b';
+      color:white;
+    }
+}
+
+
+>>>>>>> 29eb6ed7f4d722547fa5c7eccff70f7f5f5d393f
