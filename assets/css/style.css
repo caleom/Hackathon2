@@ -141,8 +141,6 @@ footer {
     translate: 100%;
   }
 }
-& a::before {
-  font: var(--fa-font-solid);
-  content: "\f09b";
-  color: white;
-}
+
+
+

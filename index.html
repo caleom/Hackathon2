@@ -50,19 +50,40 @@
     <!--Main-->
     <main class="overflow-hidden">
       <div id="gameScreen" class="top-row row">
-        <div id="playerDisplay" class="column1 col border">Player:</div>
+        <div class="column1 col border">
+          <div class="row">
+            <div id="playerDisplay" class="col">
+              Player:
+            </div>
+          </div>
+          <div class="row">
+            <div id="userScore" class="col">
+              Player Score:
+            </div>
+          </div>
+        </div>
         <div class="column2 col">
           <div class="vs-row row border">
             <div class="col">VS</div>
           </div>
-          <dov class="timer-row row border">
-            <div class="col">Timer</div>
-          </dov>
+          <div class="timer-row row border">
+            <div id="resultDisplay" class="col"></div>
+          </div>
         </div>
-        <div id="computerDisplay" class="colum3 col border">Computer:</div>
+        <div class="colum3 col border">
+          <div class="row">
+            <div id="computerDisplay" class="col">
+              Computer:
+            </div>
+          </div>
+          <div class="row">
+            <div id="compScore" class="col">
+              Computer Score:
+            </div>
+        </div>
       </div>
 
-      <div class="choices-row row border">
+      <div class="choices-row row text-center border">
         <div class="col">
           <button class="choiceBtn" id="rock">👊</button>
           <button class="choiceBtn" id="paper">🗞️</button>
@@ -120,3 +141,8 @@
     <script src="assets/js/script.js"></script>
   </body>
 </html>
+
+    
+    <div id="endScreen">Thanks for playing!
+      <button class="resetBtn">RESET GAME</button>
+    </div>
