@@ -1,31 +1,16 @@
-<<<<<<< HEAD
-/* Google Fonts import */
-
-/* Asterisk wildcard selector/ overrides browser default styles */
-
-/* General style */
-
-/* Header */
-
-/* Main content */
-
-/* Footer */
-
-/* @ media queries */
-=======
 @font-face {
   font-family: WhaleITried;
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
 }
 
 :root {
-  --primary: #4DB5FA;
-  --secondary: #ECC30B;
+  --primary: #4db5fa;
+  --secondary: #ecc30b;
   --dark: #251605;
-  --light: #FCFCFC;
+  --light: #fcfcfc;
 }
 
-h1{
+h1 {
   font-family: WhaleItried;
   font-size: 10rem;
   color: var(--secondary);
@@ -35,6 +20,61 @@ h1{
 body {
   background-color: var(--primary);
 }
+
+main {
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/**Main**/
+
+.choices {
+  margin-bottom: 30px;
+}
+
+.choices button {
+  text-align: center;
+  font-size: 7.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: hsl(13, 73%, 91%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.choices button:hover {
+  background-color: hsla(14, 74%, 91%, 0.477);
+}
+
+#playerDisplay,
+#computerDisplay {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#resultDisplay {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+#scoreDisplay {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+#finishSection {
+  text-align: center;
+}
+
+/**Footer*/
 
 footer {
   position: fixed;
@@ -48,9 +88,8 @@ footer {
   & ul {
     width: 100%;
   }
-  
 
-  & li{
+  & li {
     padding-inline: 1rem;
   }
 
@@ -59,12 +98,9 @@ footer {
     color: var(--light);
   }
 
-    & a::before {
-      font: var(--fa-font-solid);
-      content: '\f09b';
-      color:white;
-    }
+  & a::before {
+    font: var(--fa-font-solid);
+    content: "\f09b";
+    color: white;
+  }
 }
-
-
->>>>>>> 29eb6ed7f4d722547fa5c7eccff70f7f5f5d393f
