@@ -49,12 +49,12 @@ window.addEventListener("load", () => {
     //generates computer choice//
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
     // updated the choices in HTML
-    document.getElementById(
-      "playerDisplay"
-    ).textContent = `Player: ${userChoice}`;
-    document.getElementById(
-      "computerDisplay"
-    ).textContent = `Computer: ${computerChoice}`;
+    // document.getElementById(
+    //   "playerDisplay"
+    // ).textContent = `Player: ${userChoice}`;
+    // document.getElementById(
+    //   "computerDisplay"
+    // ).textContent = `Computer: ${computerChoice}`;
     // then runs the determineWinner function below
     determineWinner(userChoice, computerChoice);
   }
@@ -86,5 +86,22 @@ window.addEventListener("load", () => {
     document.getElementById(
       "compScore"
     ).textContent = `Comp Score: ${compScore}`;
+
+    updateVs(userChoice, computerChoice)
   }
 });
+
+function updateVs(player1, player2) {
+  const emoji = {
+    rock: "🤜",
+    paper: "📃",
+    scissors: "✂️",
+    lizard: "🦎",
+    spock:"🖖",
+  }
+
+  let vsBox = document.getElementById("vsBox")
+
+  vsBox.innerText = `${emoji[player1]} VS ${emoji[player2]}`
+}
+
