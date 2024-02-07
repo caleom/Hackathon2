@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Google Fonts import */
 
 /* Asterisk wildcard selector/ overrides browser default styles */
@@ -12,7 +11,7 @@
 /* Footer */
 
 /* @ media queries */
-=======
+
 @font-face {
   font-family: WhaleITried;
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
@@ -20,16 +19,17 @@
 
 :root {
   --primary: #4DB5FA;
-  --secondary: #ECC30B;
+  --secondary:#F9DCC1;
   --dark: #251605;
   --light: #FCFCFC;
 }
 
 h1{
   font-family: WhaleItried;
-  font-size: 10rem;
+  font-size: 2rem;
   color: var(--secondary);
   text-shadow: 3px 3px var(--light);
+  text-transform: uppercase;
 }
 
 body {
@@ -66,5 +66,14 @@ footer {
     }
 }
 
-
->>>>>>> 29eb6ed7f4d722547fa5c7eccff70f7f5f5d393f
+@media (min-width: 1200px) {
+  .responsive-font-example {
+    font-size: 80px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-font-example {
+    font-size: 30px;
+  }
+}
