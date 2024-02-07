@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Lizard Spock Rules</title>
+    <style>
+        /* Add your CSS styles here if needed */
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors Lizard Spock Rules</h1>
+    <ul>
+        <li><strong>Scissors</strong> cuts <strong>Paper</strong>.</li>
+        <li><strong>Paper</strong> covers <strong>Rock</strong>.</li>
+        <li><strong>Rock</strong> crushes <strong>Lizard</strong>.</li>
+        <li><strong>Lizard</strong> poisons <strong>Spock</strong>.</li>
+        <li><strong>Spock</strong> smashes <strong>Scissors</strong>.</li>
+        <li><strong>Scissors</strong> decapitates <strong>Lizard</strong>.</li>
+        <li><strong>Lizard</strong> eats <strong>Paper</strong>.</li>
+        <li><strong>Paper</strong> disproves <strong>Spock</strong>.</li>
+        <li><strong>Spock</strong> vaporizes <strong>Rock</strong>.</li>
+        <li><strong>Rock</strong> crushes <strong>Scissors</strong>.</li>
+    </ul>
+
+</body>
+</html>
