@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-/* Google Fonts import */
-
-/* Asterisk wildcard selector/ overrides browser default styles */
-
-/* General style */
-
-/* Header */
-
-/* Main content */
-
-/* Footer */
-
-/* @ media queries */
-=======
 @font-face {
   font-family: WhaleITried;
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
@@ -23,6 +8,11 @@
   --secondary: #ECC30B;
   --dark: #251605;
   --light: #FCFCFC;
+}
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
 h1{
@@ -36,35 +26,63 @@ body {
   background-color: var(--primary);
 }
 
+/* Footer CSS */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: right;
   background-color: var(--dark);
   color: var(--light);
   line-height: 1.5rem;
+  padding-block: 0.5rem;
 
   & ul {
-    width: 100%;
+    --_gap: 2rem;
   }
   
-
-  & li{
-    padding-inline: 1rem;
-  }
-
   & a {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--light);
   }
 
-    & a::before {
-      font: var(--fa-font-solid);
-      content: '\f09b';
-      color:white;
-    }
+  /* Hover effects */
+  & li{
+    padding-inline: calc(var(--_gap)/2); 
+    position: relative;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+
+  & li:hover {
+    opacity: 1;
+  }
+
+  & li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary);
+
+    scale: 0 1;
+    transition: scale 250ms,
+                translate 300ms;
+  }
+
+  & li:hover::after{
+    scale: 1 1;
+  }
+
+  /* Hover effect left to right */
+  & li:hover + li::after {
+    translate: -100%;
+  }
+
+  & li:has(+ li:hover)::after{
+    translate: 100%;
+  }
+
 }
-
-
->>>>>>> 29eb6ed7f4d722547fa5c7eccff70f7f5f5d393f
