@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: #4db5fa;
+  --primary: #92d4f7;
   --secondary: #ecc30b;
   --dark: #251605;
   --light: #fcfcfc;
@@ -14,15 +14,23 @@
   padding: 0;
   margin: 0;
 }
-
+/*Header*/
 h1 {
   font-family: WhaleItried;
-  font-size: 2rem;
+  font-size: clamp(2rem, 10vw, 8rem);
   color: var(--secondary);
   text-shadow: 3px 3px var(--light);
   text-transform: uppercase;
 }
+#header {
 
+    height: 100%;
+    width: 100%;
+    background: url("../img/multfilm-shou-simpsons-personazh-20th-century-fox-art-ris-15.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+/**/
 body {
   background-color: var(--primary);
 }
@@ -143,5 +151,9 @@ footer {
   }
 }
 
+@media screen and (min-width: 768px) {
 
-
+  #header {
+    font-size: clamp(2rem, 50vw, 5rem); ; 
+  }
+}
