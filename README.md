@@ -1,7 +1,10 @@
 Rock, Paper, Scissors, Lizard, Spock 
+
+
 This project aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game. 
 
-Explanation of original Rock, Paper, Scissors:
+Explanation of the original classic game, original Rock, Paper, Scissors:
+
 Both players start by choosing either rock, paper, or scissors.
 If their choices are the same, it’s a tie.
 Otherwise, we check if Player 1’s choice beats Player 2’s choice to determine the winner.
@@ -99,6 +102,9 @@ From the source section drop-down menu, select the Master Branch
 Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
 Credits
+
+Hover effect on footer uses this guide: https://www.youtube.com/watch?v=G_h2pGZcOzc
+
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
 You can break the credits section up into Content and Media, depending on what you have included in your project.
 Content

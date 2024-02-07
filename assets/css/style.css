@@ -1,30 +1,21 @@
-/* Google Fonts import */
-
-/* Asterisk wildcard selector/ overrides browser default styles */
-
-/* General style */
-
-/* Header */
-
-/* Main content */
-
-/* Footer */
-
-/* @ media queries */
-
 @font-face {
   font-family: WhaleITried;
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
 }
 
 :root {
-  --primary: #4DB5FA;
-  --secondary:#F9DCC1;
+  --primary: #4db5fa;
+  --secondary: #ecc30b;
   --dark: #251605;
-  --light: #FCFCFC;
+  --light: #fcfcfc;
 }
 
-h1{
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
   font-family: WhaleItried;
   font-size: 2rem;
   color: var(--secondary);
@@ -36,44 +27,121 @@ body {
   background-color: var(--primary);
 }
 
+main {
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/**Main**/
+
+/**choice section**/
+.choices-row {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.choices-row button {
+  font-size: 7.5rem;
+  min-width: 160px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 5px solid var(--secondary);
+  background-color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.choices-row button:hover {
+  transform: scale(1.05);
+  background-color: white;
+}
+
+/**finish button**/
+.finishBtn {
+  font-family: WhaleItried;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 25%;
+  border: 5px solid var(--secondary);
+  background-color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.finishBtn:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+/**Footer*/
+
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: right;
   background-color: var(--dark);
   color: var(--light);
   line-height: 1.5rem;
+  padding-block: 0.5rem;
 
   & ul {
+    --_gap: 2rem;
     width: 100%;
   }
-  
 
-  & li{
+  & li {
     padding-inline: 1rem;
   }
 
   & a {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--light);
   }
 
-    & a::before {
-      font: var(--fa-font-solid);
-      content: '\f09b';
-      color:white;
-    }
+  /* Hover effects */
+  & li {
+    padding-inline: calc(var(--_gap) / 2);
+    position: relative;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+
+  & li:hover {
+    opacity: 1;
+  }
+
+  & li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary);
+
+    scale: 0 1;
+    transition: scale 250ms, translate 300ms;
+  }
+
+  & li:hover::after {
+    scale: 1 1;
+  }
+
+  /* Hover effect left to right */
+  & li:hover + li::after {
+    translate: -100%;
+  }
+
+  & li:has(+ li:hover)::after {
+    translate: 100%;
+  }
 }
 
-@media (min-width: 1200px) {
-  .responsive-font-example {
-    font-size: 80px;
-  }
-}
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
-@media (max-width: 1199.98px) {
-  .responsive-font-example {
-    font-size: 30px;
-  }
-}
+
+
