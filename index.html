@@ -39,28 +39,45 @@
 
   <body>
     <!--Header-->
-    <header>
-      <h1>Rock, Paper, Scissors</h1>
+    <header class="overflow-hidden">
+      <div class="row">
+        <div class="col text-center">
+          <h1>Rock, Paper, Scissors</h1>
+        </div>
+      </div>
     </header>
 
     <!--Main-->
-    <main>
-      <div id="gameScreen">
-        <div id="playerDisplay">Player:</div>
-        <div id="computerDisplay">Computer:</div>
-        <div id="resultDisplay"></div>
-        <div id="scoreDisplay">
-          <div id="userScore">User Score:</div>
-          <div id="compScore">Comp Score:</div>
+    <main class="overflow-hidden">
+      <div id="gameScreen" class="top-row row">
+        <div id="playerDisplay" class="column1 col border">Player:</div>
+        <div class="column2 col">
+          <div class="vs-row row border">
+            <div class="col">VS</div>
+          </div>
+          <dov class="timer-row row border">
+            <div class="col">Timer</div>
+          </dov>
         </div>
+        <div id="computerDisplay" class="colum3 col border">Computer:</div>
+      </div>
 
-        <div class="choices">
+      <div class="choices-row row border">
+        <div class="col">
           <button class="choiceBtn" id="rock">👊</button>
           <button class="choiceBtn" id="paper">🗞️</button>
           <button class="choiceBtn" id="scissors">✂️</button>
           <button class="choiceBtn" id="spock">🖖</button>
           <button class="choiceBtn" id="lizard">🦎</button>
         </div>
+      </div>
+
+      <div class="text-center" id="finishSection">
+        <button class="finishBtn">Finish</button>
+      </div>
+
+    </main>
+   
 
         <div class="text-center" id="finishSection">
           <button class="finishBtn">Finish</button>
@@ -70,25 +87,25 @@
 
     <!--footer -->
     <footer class="footer">
-      <ul class="nav">
+      <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a href="https://github.com/StephShobiye"
-            ><i class="fa-brands fa-github"></i>Steph</a
+          <a href="https://github.com/StephShobiye" target="_blank"
+            ><i class="fa-brands fa-github"></i> Steph</a
           >
         </li>
         <li class="nav-item">
-          <a href="https://github.com/BenFash"
-            ><i class="fa-brands fa-github"></i>Ben</a
+          <a href="https://github.com/BenFash" target="_blank"
+            ><i class="fa-brands fa-github"></i> Ben</a
           >
         </li>
         <li class="nav-item">
-          <a href="https://github.com/caleom"
-            ><i class="fa-brands fa-github"></i>Liam</a
+          <a href="https://github.com/caleom" target="_blank"
+            ><i class="fa-brands fa-github"></i> Liam</a
           >
         </li>
         <li class="nav-item">
-          <a href="https://github.com/bvelizmera"
-            ><i class="fa-brands fa-github"></i>Bill</a
+          <a href="https://github.com/bvelizmera" target="_blank"
+            ><i class="fa-brands fa-github"></i> Bill</a
           >
         </li>
       </ul>

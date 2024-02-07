@@ -7,7 +7,12 @@
   --primary: #4db5fa;
   --secondary: #ecc30b;
   --dark: #251605;
-  --light: #fcfcfc;
+  --light: #FCFCFC;
+}
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -33,11 +38,11 @@ main {
 
 /**Main**/
 
-.choices {
+.choices-row {
   margin-bottom: 30px;
 }
 
-.choices button {
+.choices-row button {
   text-align: center;
   font-size: 7.5rem;
   min-width: 160px;
@@ -49,26 +54,10 @@ main {
   transition: background-color 0.5s ease;
 }
 
-.choices button:hover {
+.choices-row button:hover {
   background-color: hsla(14, 74%, 91%, 0.477);
 }
 
-#playerDisplay,
-#computerDisplay {
-  text-align: center;
-  font-size: 2.5rem;
-}
-
-#resultDisplay {
-  font-size: 4.5rem;
-  text-align: center;
-}
-
-#scoreDisplay {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: space-around;
-}
 
 #finishSection {
   text-align: center;
@@ -80,24 +69,66 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: right;
   background-color: var(--dark);
   color: var(--light);
   line-height: 1.5rem;
+  padding-block: 0.5rem;
 
   & ul {
+    --_gap: 2rem;
     width: 100%;
   }
 
   & li {
     padding-inline: 1rem;
   }
-
+  
   & a {
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--light);
   }
 
+  /* Hover effects */
+  & li{
+    padding-inline: calc(var(--_gap)/2); 
+    position: relative;
+    opacity: 0.7;
+    overflow: hidden;
+  }
+
+  & li:hover {
+    opacity: 1;
+  }
+
+  & li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary);
+
+    scale: 0 1;
+    transition: scale 250ms,
+                translate 300ms;
+  }
+
+  & li:hover::after{
+    scale: 1 1;
+  }
+
+  /* Hover effect left to right */
+  & li:hover + li::after {
+    translate: -100%;
+  }
+
+  & li:has(+ li:hover)::after{
+    translate: 100%;
+  }
+
+}
   & a::before {
     font: var(--fa-font-solid);
     content: "\f09b";
