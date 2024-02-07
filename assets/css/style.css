@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+
 @font-face {
   font-family: WhaleITried;
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
 }
+
+
 
 :root {
   --primary: #4db5fa;
@@ -13,6 +17,7 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
 
 h1 {
@@ -24,16 +29,13 @@ h1 {
 
 body {
   background-color: var(--primary);
+  
 }
 
 main {
   font-weight: bold;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+  font-family: 'Ysabeau Infant', sans-serif;
+  font-size: clamp(1rem, 2.5vw,3rem);
 }
 
 /**Main**/
@@ -141,6 +143,3 @@ footer {
     translate: 100%;
   }
 }
-
-
-
