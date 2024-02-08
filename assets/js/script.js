@@ -94,7 +94,7 @@ window.addEventListener("load", () => {
     // update scoreboard
     document.getElementById(
       "userScore"
-    ).textContent = `${nameField}'s score: ${userScore}`;
+    ).textContent = `Player's score: ${userScore}`;
     document.getElementById(
       "compScore"
     ).textContent = `Comp Score: ${compScore}`;
