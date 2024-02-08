@@ -44,50 +44,89 @@
               color: black;
               list-style-type: none;
             </style>
-      </head>
-   
-
-      <body>
-        <h1>Rock Paper Scissors Lizard Spock Rules</h1>
-        <div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors Lizard Spock Rules</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors Lizard Spock Rules</h1>
+    <div class="container">
         <ul class="text-center custom-box">
-        <li><strong>Scissors</strong> cuts <strong>Paper</strong>.</li>
-        <li><strong>Paper</strong> covers <strong>Rock</strong>.</li>
-        <li><strong>Rock</strong> crushes <strong>Lizard</strong>.</li>
-        <li><strong>Lizard</strong> poisons <strong>Spock</strong>.</li>
-        <li><strong>Spock</strong> smashes <strong>Scissors</strong>.</li>
-        <li><strong>Scissors</strong> decapitates <strong>Lizard</strong>.</li>
-        <li><strong>Lizard</strong> eats <strong>Paper</strong>.</li>
-        <li><strong>Paper</strong> disproves <strong>Spock</strong>.</li>
-        <li><strong>Spock</strong> vaporizes <strong>Rock</strong>.</li>
-        <li><strong>Rock</strong> crushes <strong>Scissors</strong>.</li>
+            <li><strong>Scissors</strong> cuts <strong>Paper</strong>.</li>
+            <li><strong>Paper</strong> covers <strong>Rock</strong>.</li>
+            <li><strong>Rock</strong> crushes <strong>Lizard</strong>.</li>
+            <li><strong>Lizard</strong> poisons <strong>Spock</strong>.</li>
+            <li><strong>Spock</strong> smashes <strong>Scissors</strong>.</li>
+            <li><strong>Scissors</strong> decapitates <strong>Lizard</strong>.</li>
+            <li><strong>Lizard</strong> eats <strong>Paper</strong>.</li>
+            <li><strong>Paper</strong> disproves <strong>Spock</strong>.</li>
+            <li><strong>Spock</strong> vaporizes <strong>Rock</strong>.</li>
+            <li><strong>Rock</strong> crushes <strong>Scissors</strong>.</li>
         </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-light btn-block" id="teacherGuideButton">Teacher Guide Probability Lesson Plan</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-light btn-block">Homework</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-light btn-block">Further Activities</button>
+            </div>
         </div>
-        <div class="container">
-  <div class="row">
-    <div class="col">
-      <button class="btn btn-light btn-block">Lesson Plan 1</button>
+        <div class="row mt-3">
+            <div class="col">
+                <button class="btn btn-success btn-block" id="ncRefButton">NC Ref</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-success btn-block">HW Solution</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-success btn-block">Hint 3</button>
+            </div>
+        </div>
     </div>
-    <div class="col">
-      <button class="btn btn-light btn-block">Lesson Plan 2</button>
-    </div>
-    <div class="col">
-      <button class="btn btn-light btn-block">Lesson Plan 3</button>
-    </div>
-  </div>
-  <div class="row mt-3">
-    <div class="col">
-      <button class="btn btn-success btn-block">Hint 1</button>
-    </div>
-    <div class="col">
-      <button class="btn btn-success btn-block">Hint 2</button>
-    </div>
-    <div class="col">
-      <button class="btn btn-success btn-block">Hint 3</button>
-    </div>
-  </div>
-</div>
-        </body>
+
+    <script>
+        // Get a reference to the "Teacher Guide" button
+        const teacherGuideButton = document.getElementById('teacherGuideButton');
+
+        // Add an event listener to the button
+        teacherGuideButton.addEventListener('click', async () => {
+            try {
+                // Fetch the content from the provided Google Docs URL
+                const response = await fetch('https://docs.google.com/document/d/1BicMS-nkDj-sO4vlPWrW2mK2aI7huKvh6D6ef_UxaSo/export?format=txt');
+                const textContent = await response.text();
+
+                // Display the fetched content (you can customize this part)
+                console.log(textContent);
+            } catch (error) {
+                console.error('Error fetching the document:', error);
+            }
+        });
+
+        // Get a reference to the "NC Ref" button
+        const ncRefButton = document.getElementById('ncRefButton');
+
+        // Add an event listener to the button
+        ncRefButton.addEventListener('click', async () => {
+            try {
+                // Fetch the content from the provided NC reference website
+                const response = await fetch('https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388');
+                const textContent = await response.text();
+
+                // Display the fetched content (you can customize this part)
+                console.log(textContent);
+            } catch (error) {
+                console.error('Error fetching the document:', error);
+            }
+        });
+    </script>
+</body>      
     
 <footer class="footer">
     <ul class="nav justify-content-end">
@@ -114,3 +153,9 @@
     </ul>
   </footer>
 </html>
+
+
+
+
+
+
