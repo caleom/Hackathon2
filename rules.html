@@ -43,12 +43,17 @@
           color: black;
           list-style-type: none;
       }
-      
+      a {
+        text-decoration: none;
+        color:black;
+      }
+
       .btn-block {
           margin-bottom: 10px;
           margin-top: 10px;
           border-radius: 10px;
           border: 4px solid rgba(36, 68, 252, 0.779);
+          background-color: rgba(249, 220, 193, 0.974);
           padding: 20px;
           color:black;
       }
@@ -117,17 +122,12 @@
         </ul>
 </div>
 <div class="container">
-  <div class="row justify-content-center">
-      <div class="col-4">
-          <button class="btn btn-light btn-block" id="teacherGuideButton">Teacher Guide Probability Lesson Plan</button>
+  <div class="row text-center">
+      <div class="col">
+          <button class="btn btn-light btn-block" id="teacherGuideButton"><a href="assets/pdfs/Lesson Plan_ Exploring Probability with Rock, Paper, Scissors, Lizard, Spock.pdf" target="_blank">Teacher Probability Lesson Plan</a></button>
       </div>
-      <div class="col-4">
-          <!-- Removed the Homework button -->
-      </div>
-  </div>
-  <div class="row mt-3 justify-content-center">
-      <div class="col-4">
-          <button class="btn btn-success btn-block" id="ncRefButton">NC Ref</button>
+      <div class="col">
+        <button class="btn btn-success btn-block" id="ncRefButton"><a href="https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388" target="_blank">National Curriculum KS3 Reference</a></button>
       </div>
   </div>
 </div>   
@@ -166,13 +166,7 @@ ncRefButton.addEventListener('click', function () {
         .catch(error => {
             console.error('Error fetching the document:', error);
             });
-        });
-        
-        // Event listener for the 2-player button
-        const twoPlayerButton = document.getElementById('twoPlayerButton');
-        twoPlayerButton.addEventListener('click', () => {
-            window.open('https://rpsls.net#87zjn', '_blank');
-        });
+        });    
     </script>
     
     <footer class="footer">
