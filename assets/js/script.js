@@ -6,9 +6,21 @@ window.addEventListener("load", () => {
   let userScore = 0;
   let compScore = 0;
 
-  // added event listeners to all choicebuttons class and adds the handle choice functions to it //
-  const buttons = document.querySelectorAll(".choiceBtn");
-  buttons.forEach((button) => button.addEventListener("click", handleChoice));
+  //  event listeners for all choicebuttons class and adds the handle choice functions to it //
+  const optionButtons = document.querySelectorAll(".choiceBtn");
+  optionButtons.forEach((button) =>
+    button.addEventListener("click", handleChoice)
+  );
+
+  // event listener for username submit button and query selector for nameinputfield.
+  const nameButton = document.getElementById("submitBtn");
+  nameButton.addEventListener("click", handleName);
+
+  function handleName() {
+    const nameField = document.getElementById("nameInput").value;
+    const nameUpdate = document.getElementById("userScore");
+    nameUpdate.textContent = `${nameField}'s score:`;
+  }
 
   // eventtlistener + function for start game button (
   // document.querySelector(".startBtn").addEventListener("click", clickedStart());
@@ -82,12 +94,12 @@ window.addEventListener("load", () => {
     // update scoreboard
     document.getElementById(
       "userScore"
-    ).textContent = `Player Score: ${userScore}`;
+    ).textContent = `${nameField}'s score: ${userScore}`;
     document.getElementById(
       "compScore"
     ).textContent = `Comp Score: ${compScore}`;
 
-    updateVs(userChoice, computerChoice)
+    updateVs(userChoice, computerChoice);
   }
 });
 
@@ -97,11 +109,10 @@ function updateVs(player1, player2) {
     paper: "📃",
     scissors: "✂️",
     lizard: "🦎",
-    spock:"🖖",
-  }
+    spock: "🖖",
+  };
 
-  let vsBox = document.getElementById("vsBox")
+  let vsBox = document.getElementById("vsBox");
 
-  vsBox.innerText = `${emoji[player1]} VS ${emoji[player2]}`
+  vsBox.innerText = `${emoji[player1]} VS ${emoji[player2]}`;
 }
-
