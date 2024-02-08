@@ -19,10 +19,13 @@ window.addEventListener("load", () => {
   function handleName() {
     let nameField = document.getElementById("nameInput").value;
     let nameUpdate = document.getElementById("userName");
+
+    nameField = extractLetters(nameField)
+
     nameUpdate.innerText = `${nameField}'s score:`;
     // remove input area after submit.
     let section = document.querySelector("section");
-    section.style.display = "none";
+    section.style.visibility = "hidden";
   }
 
   // function for .choice buttons
@@ -63,15 +66,14 @@ window.addEventListener("load", () => {
     document.getElementById("userScore").textContent = `${userScore}`;
     document.getElementById("compScore").textContent = `${compScore}`;
 
+    updateVs(userChoice, computerChoice);
+
     if (userScore > roundLimit / 2) {
       showResults("user");
       
     } else if (compScore > roundLimit / 2) {
       showResults("comp");
     }
-
-    updateVs(userChoice, computerChoice);
-
   }
 });
 
@@ -93,16 +95,22 @@ function updateVs(player1, player2) {
 //results modal
 function showResults(data) {
 
+  //variables for game sounds
+  const win = new Audio('assets/sound/win.wav');
+  const lose = new Audio('assets/sound/lose.wav');
+
   const resultModal = new bootstrap.Modal(
     document.getElementById("resultModal")
   );
   let content = document.getElementById("modal-body");
 
   if (data === "user") {
+    win.play();
     content.innerHTML = `⭐You won!⭐<br>
                         Play again to see if you succeed again<br>
                         <i class="h1 fa-solid fa-trophy fa-beat" style="color: #e6b755;"></i>`;
   } else if (data === "comp") {
+    lose.play();
     content.innerHTML = `😭You lost😭<br>
                           Play again to win!<br>
                           <i class="h1 fa-solid fa-skull-crossbones fa-shake" style="color: #fe0107;"></i>`;
@@ -117,13 +125,13 @@ const resetButton = document.querySelector(".resetBtn");
 resetButton.addEventListener("click", handleReset);
 
 // Function to handle resetting the game
-function handleReset(userScore, compScore) {
+function handleReset() {
   userScore = 0;
   compScore = 0;
 
   // makes input field avail again
   let section = document.querySelector("section");
-  section.style.display = "block";
+  section.style.visibility = "visible";
 
   // Reset player name and scores in the UI
   document.getElementById("nameInput").value = "";
@@ -131,5 +139,12 @@ function handleReset(userScore, compScore) {
   document.getElementById("userScore").innerText = `0`;
   document.getElementById("compScore").innerText = `0`;
   document.getElementById("vsBox").innerText = "VS";
-  document.getElementById("resultDisplay").innerText = "";
+  document.getElementById("resultDisplay").innerText = " ";
+}
+
+function extractLetters(inputString) {
+  // Use a regular expression to match only letters (A-Z, a-z)
+  const lettersOnly = inputString.replace(/[^a-zA-Z\s]/g, '');
+
+  return lettersOnly;
 }
