@@ -17,9 +17,12 @@ window.addEventListener("load", () => {
   nameButton.addEventListener("click", handleName);
 
   function handleName() {
-    const nameField = document.getElementById("nameInput").value;
-    const nameUpdate = document.getElementById("userName");
+    let nameField = document.getElementById("nameInput").value;
+    let nameUpdate = document.getElementById("userName");
     nameUpdate.innerText = `${nameField}'s score:`;
+    // remove input area after submit.
+    let section = document.querySelector("section");
+    section.style.display = "none";
   }
 
   // eventtlistener + function for start game button (
@@ -142,4 +145,26 @@ function showResults(data) {
   }
 
   resultModal.show();
+}
+
+// Event listener for the reset button
+const resetButton = document.querySelector(".resetBtn");
+resetButton.addEventListener("click", handleReset);
+
+// Function to handle resetting the game
+function handleReset(userScore, compScore) {
+  userScore = 0;
+  compScore = 0;
+
+  // makes input field avail again
+  let section = document.querySelector("section");
+  section.style.display = "block";
+
+  // Reset player name and scores in the UI
+  document.getElementById("nameInput").value = "";
+  document.getElementById("userName").innerText = `Player Score:`;
+  document.getElementById("userScore").style.display = "none";
+  document.getElementById("compScore").innerText = `Comp Score:`;
+  document.getElementById("vsBox").innerText = "VS";
+  document.getElementById("resultDisplay").innerText = "";
 }
