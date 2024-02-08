@@ -105,11 +105,16 @@ main {
 }
 
 /**finish & rules button**/
-.finishBtn,
-.rulesBtn {
-  margin-bottom: 50px;
+#finishSection {
   font-family: WhaleItried;
+  margin-bottom: 5px;
   font-size: 1.5rem;
+}
+
+.finishBtn,
+.rulesBtn,
+.resetBtn {
+  margin: 2px;
   padding: 15px;
   border-radius: 25%;
   border: 5px solid var(--secondary);
@@ -119,7 +124,8 @@ main {
 }
 
 .finishBtn:hover,
-.rulesBtn:hover {
+.rulesBtn:hover,
+.resetBtn:hover {
   transform: scale(1.1);
   background-color: white;
 }
