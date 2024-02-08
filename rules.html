@@ -1,91 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-        <!--Meta tags for search engines-->
-        <meta
-          name="description"
-          content="Rock, papers, Scissors kids game with the extra feature of spock and lizard"
-        />
-        <meta
-          name="keywords"
-          content="games, fun, kids, rock, paper, Scissors, spock, lizard"
-        />
-    
-        <!--Title-->
-        <title>Rock, Paper, Scissors</title>
-    
-        <!--Favicon-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link
-          rel="manifest"
-          href="assets/favicon/kisspng-lizard-spock-rockpaperscissors-vulcan-salute-5b0ab3093ab171.1828884915274278492404.ico"
-        />
-    
-        <!-- Bootstrap -->
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous"
-        />
-        <!--CSS-->
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <style>
-          .custom-box {
-              border: 8px solid rgba(36, 68, 252, 0.779);
-              border-radius: 10px;
-              background-color: rgba(249, 220, 193, 0.974);
-              padding: 20px;
-              color: black;
-              list-style-type: none;
-            </style>
-      </head>
-   
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <body>
-        <h1>Rock Paper Scissors Lizard Spock Rules</h1>
-        <div class="container">
+    <!--Meta tags for search engines-->
+    <meta
+      name="description"
+      content="Rock, papers, Scissors kids game with the extra feature of spock and lizard"
+    />
+    <meta
+      name="keywords"
+      content="games, fun, kids, rock, paper, Scissors, spock, lizard"
+    />
+
+    <!--Title-->
+    <title>Rock, Paper, Scissors</title>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="manifest"
+      href="assets/favicon/kisspng-lizard-spock-rockpaperscissors-vulcan-salute-5b0ab3093ab171.1828884915274278492404.ico"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .custom-box {
+          border: 8px solid rgba(36, 68, 252, 0.779);
+          border-radius: 10px;
+          background-color: rgba(249, 220, 193, 0.974);
+          padding: 20px;
+          color: black;
+          list-style-type: none;
+      }
+      
+      .btn-block {
+          margin-bottom: 10px;
+          margin-top: 10px;
+          border-radius: 10px;
+          border: 4px solid rgba(36, 68, 252, 0.779);
+          padding: 20px;
+          color:black;
+      }
+      
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      
+      .image-container {
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors Lizard Spock Rules</h1>
+    <div class="container">
         <ul class="text-center custom-box">
-        <li><strong>Scissors</strong> cuts <strong>Paper</strong>.</li>
-        <li><strong>Paper</strong> covers <strong>Rock</strong>.</li>
-        <li><strong>Rock</strong> crushes <strong>Lizard</strong>.</li>
-        <li><strong>Lizard</strong> poisons <strong>Spock</strong>.</li>
-        <li><strong>Spock</strong> smashes <strong>Scissors</strong>.</li>
-        <li><strong>Scissors</strong> decapitates <strong>Lizard</strong>.</li>
-        <li><strong>Lizard</strong> eats <strong>Paper</strong>.</li>
-        <li><strong>Paper</strong> disproves <strong>Spock</strong>.</li>
-        <li><strong>Spock</strong> vaporizes <strong>Rock</strong>.</li>
-        <li><strong>Rock</strong> crushes <strong>Scissors</strong>.</li>
+            <li><strong>Scissors</strong> cuts <strong>Paper</strong>.</li>
+            <li><strong>Paper</strong> covers <strong>Rock</strong>.</li>
+            <li><strong>Rock</strong> crushes <strong>Lizard</strong>.</li>
+            <li><strong>Lizard</strong> poisons <strong>Spock</strong>.</li>
+            <li><strong>Spock</strong> smashes <strong>Scissors</strong>.</li>
+            <li><strong>Scissors</strong> decapitates <strong>Lizard</strong>.</li>
+            <li><strong>Lizard</strong> eats <strong>Paper</strong>.</li>
+            <li><strong>Paper</strong> disproves <strong>Spock</strong>.</li>
+            <li><strong>Spock</strong> vaporizes <strong>Rock</strong>.</li>
+            <li><strong>Rock</strong> crushes <strong>Scissors</strong>.</li>
         </ul>
+</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <button class="btn btn-light btn-block" id="teacherGuideButton">Teacher Guide Probability Lesson Plan</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-light btn-block">Homework</button>
+            </div>
         </div>
-        </body>
-<footer class="footer">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a href="https://github.com/StephShobiye" target="_blank"
-          ><i class="fa-brands fa-github"></i> Steph</a
-        >
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/BenFash" target="_blank"
-          ><i class="fa-brands fa-github"></i> Ben</a
-        >
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/caleom" target="_blank"
-          ><i class="fa-brands fa-github"></i> Liam</a
-        >
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/bvelizmera" target="_blank"
-          ><i class="fa-brands fa-github"></i> Bill</a
-        >
-      </li>
-    </ul>
-  </footer>
+        <div class="row mt-3 justify-content-center">
+            <div class="col-4">
+                <button class="btn btn-success btn-block" id="ncRefButton">NC Ref</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-success btn-block">HW Solution</button>
+           </div>
+           </div>
+        </div>
+        
+        <!-- Image and 2-player button -->
+        <div class="row mt-3 center">
+          <div class="col image-container">
+              <img src="https://www.infoseriestv.com/wp-content/uploads/2012/03/The-Big-Bang-Theory.jpg" alt="The Big Bang Theory" width="300" height="200">
+          </div>
+          <div class="col center">
+              <button class="btn btn-primary btn-block" id="twoPlayerButton">2-player</button>
+          </div>
+        </div>
+    </div>
+
+    <script>
+        const teacherGuideButton = document.getElementById('teacherGuideButton');
+        teacherGuideButton.addEventListener('click', async () => {
+            try  {const response = await fetch('https://docs.google.com/document/d/1BicMS-nkDj-sO4vlPWrW2mK2aI7huKvh6D6ef_UxaSo/export?format=txt');
+                const textContent = await response.text();
+                console.log(textContent);
+            } catch (error) {
+                console.error('Error fetching the document:', error);
+            }
+        });
+        const ncRefButton = document.getElementById('ncRefButton');
+        ncRefButton.addEventListener('click', async () => {
+            try {
+                const response = await fetch('https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388');
+                const textContent = await response.text();
+                console.log(textContent);
+            } catch (error) {
+                console.error('Error fetching the document:', error);
+            }
+        });
+        
+        // Event listener for the 2-player button
+        const twoPlayerButton = document.getElementById('twoPlayerButton');
+        twoPlayerButton.addEventListener('click', () => {
+            window.open('https://rpsls.net#87zjn', '_blank');
+        });
+    </script>
+    
+    <footer class="footer">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a href="https://github.com/StephShobiye" target="_blank"
+              ><i class="fa-brands fa-github"></i> Steph</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/BenFash" target="_blank"
+              ><i class="fa-brands fa-github"></i> Ben</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/caleom" target="_blank"
+              ><i class="fa-brands fa-github"></i> Liam</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/bvelizmera" target="_blank"
+              ><i class="fa-brands fa-github"></i> Bill</a
+            >
+          </li>
+        </ul>
+    </footer>
+</body>
 </html>
