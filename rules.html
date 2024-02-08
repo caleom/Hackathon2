@@ -124,14 +124,15 @@
             }
         });
         const ncRefButton = document.getElementById('ncRefButton');
-        ncRefButton.addEventListener('click', async () => {
-            try {
-                const response = await fetch('https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388');
-                const textContent = await response.text();
-                console.log(textContent);
-            } catch (error) {
-                console.error('Error fetching the document:', error);
-            }
+ncRefButton.addEventListener('click', function () {
+    fetch('https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388')
+        .then(response => response.text())
+        .then(textContent => {
+            console.log(textContent);
+        })
+        .catch(error => {
+            console.error('Error fetching the document:', error);
+            });
         });
         
         // Event listener for the 2-player button
