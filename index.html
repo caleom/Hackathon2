@@ -80,8 +80,8 @@
           </div>
         </div>
         <div class="row">
-          <div id="userScore" class="col">
-            Player Score:
+          <div  class="col">
+            <span id="userName">Player Score:</span><span id="userScore"></span>
           </div>
         </div>
       </div>
@@ -119,6 +119,19 @@
       <div class="text-center" id="finishSection">
         <button class="finishBtn">End</button>
         <button class="rulesBtn"><a href="rules.html">Rules</a></button>
+        <button id="resultsModalButton">Modal</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div id="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
       </div>
 
   </main>
