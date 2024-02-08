@@ -22,7 +22,7 @@
 /*Header*/
 h1 {
   font-family: WhaleItried;
-  font-size: clamp(2rem, 10vw, 8rem);
+  font-size: clamp(2rem, 4vw, 6vw);
   color: var(--secondary);
   text-shadow: 3px 3px var(--light);
   text-transform: uppercase;
