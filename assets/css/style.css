@@ -5,10 +5,8 @@
   src: url(../fonts/WhaleITriedRegular-xWq0.ttf);
 }
 
-
-
 :root {
-  --primary: #4db5fa;
+  --primary: #92d4f7;
   --secondary: #ecc30b;
   --dark: #251605;
   --light: #fcfcfc;
@@ -17,28 +15,71 @@
 * {
   padding: 0;
   margin: 0;
-  
 }
-
+/*Header*/
 h1 {
   font-family: WhaleItried;
-  font-size: 10rem;
+  font-size: clamp(2rem, 4vw, 6vw);
   color: var(--secondary);
   text-shadow: 3px 3px var(--light);
+  text-transform: uppercase;
+}
+#header {
+
+    height: 100%;
+    width: 100%;
+    background: url("../img/multfilm-shou-simpsons-personazh-20th-century-fox-art-ris-15.jpg") no-repeat center center/cover;
+    position: relative;
 }
 
+/**/
 body {
   background-color: var(--primary);
-  
 }
 
 main {
   font-weight: bold;
-  font-family: 'Ysabeau Infant', sans-serif;
-  font-size: clamp(1rem, 2.5vw,3rem);
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 3rem);
 }
 
 /**Main**/
+
+/**username input**/
+#usernameArea {
+  margin-left: 6px;
+  padding: 5px;
+  font-family: "Ysabeau Infant", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+}
+
+#nameInput {
+  padding: 0 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  transition: background-color 0.5s ease;
+}
+
+#nameInput:hover {
+  transform: scale(1.05);
+  background-color: white;
+}
+
+#submitBtn {
+  margin-left: 2px;
+  padding: 0 5px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary);
+  background-color: whitesmoke;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#submitBtn:hover {
+  transform: scale(1.05);
+  background-color: white;
+}
 
 /**choice section**/
 .choices-row {
@@ -64,6 +105,7 @@ main {
 
 /**finish button**/
 .finishBtn {
+  margin-bottom: 50px;
   font-family: WhaleItried;
   font-size: 1.5rem;
   padding: 15px;
