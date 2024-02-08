@@ -88,10 +88,11 @@ main {
 }
 
 .choices-row button {
-  font-size: 7.5rem;
-  min-width: 160px;
-  margin: 0 10px;
-  border-radius: 50%;
+  font-size: 4rem;
+  width: 105px;
+  height: 105px;
+  margin: 5px;
+  border-radius: 20%;
   border: 5px solid var(--secondary);
   background-color: whitesmoke;
   cursor: pointer;
@@ -185,3 +186,17 @@ footer {
     translate: 100%;
   }
 }
+/*Media sizes
+@media screen and (min-width: 375px) {
+  .choices-row button {
+    font-size: 5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary);
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+}
+*/
