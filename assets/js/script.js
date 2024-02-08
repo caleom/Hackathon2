@@ -18,8 +18,8 @@ window.addEventListener("load", () => {
 
   function handleName() {
     const nameField = document.getElementById("nameInput").value;
-    const nameUpdate = document.getElementById("userScore");
-    nameUpdate.textContent = `${nameField}'s score:`;
+    const nameUpdate = document.getElementById("userName");
+    nameUpdate.innerText = `${nameField}'s score:`;
   }
 
   // eventtlistener + function for start game button (
@@ -72,6 +72,8 @@ window.addEventListener("load", () => {
   }
 
   function determineWinner(userChoice, computerChoice) {
+    let roundLimit = 5
+
     const winConditions = {
       rock: ["scissors", "spock"],
       paper: ["rock", "spock"],
@@ -94,15 +96,23 @@ window.addEventListener("load", () => {
     // update scoreboard
     document.getElementById(
       "userScore"
-    ).textContent = `${nameField}'s score: ${userScore}`;
+    ).textContent = `${userScore}`;
     document.getElementById(
       "compScore"
     ).textContent = `Comp Score: ${compScore}`;
+
+    if (userScore > (roundLimit / 2)) {
+      showResults("user")
+    }else if (compScore > roundLimit / 2) {
+      showResults("comp");
+    }
 
     updateVs(userChoice, computerChoice);
   }
 });
 
+
+//update VS div
 function updateVs(player1, player2) {
   const emoji = {
     rock: "🤜",
@@ -116,3 +126,24 @@ function updateVs(player1, player2) {
 
   vsBox.innerText = `${emoji[player1]} VS ${emoji[player2]}`;
 }
+
+const modalButton = document.getElementById("resultsModalButton")
+
+modalButton.addEventListener("click", showResults)
+
+//results modal
+function showResults(data) {
+  const resultModal = new bootstrap.Modal(document.getElementById("resultModal"))
+  let content = document.getElementById("modal-body")
+
+  if (data === "user") {
+    content.innerText = "userwon"
+  } else if (data === "comp") {
+    content.innerText = "compwon"
+  }
+
+  
+  resultModal.show()
+}
+
+
