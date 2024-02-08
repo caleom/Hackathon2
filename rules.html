@@ -34,41 +34,6 @@
     />
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-      .custom-box {
-          border: 8px solid rgba(36, 68, 252, 0.779);
-          border-radius: 10px;
-          background-color: rgba(249, 220, 193, 0.974);
-          padding: 20px;
-          color: black;
-          list-style-type: none;
-      }
-      a {
-        text-decoration: none;
-        color:black;
-      }
-
-      .btn-block {
-          margin-bottom: 10px;
-          margin-top: 10px;
-          border-radius: 10px;
-          border: 4px solid rgba(36, 68, 252, 0.779);
-          background-color: rgba(249, 220, 193, 0.974);
-          padding: 20px;
-          color:black;
-      }
-      
-      .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-      }
-      
-      .image-container {
-        text-align: center;
-      }
-    </style>
 </head>
 <body>
   <!--Header-->
@@ -121,10 +86,14 @@
             <li><strong>Rock</strong> crushes <strong>Scissors</strong>.</li>
         </ul>
 </div>
+<main class="overflow-hidden">
 <div class="container">
   <div class="row text-center">
       <div class="col">
           <button class="btn btn-light btn-block" id="teacherGuideButton"><a href="assets/pdfs/Lesson Plan_ Exploring Probability with Rock, Paper, Scissors, Lizard, Spock.pdf" target="_blank">Teacher Probability Lesson Plan</a></button>
+      </div>
+      <div class="col">
+          <button class="btn btn-light btn-block"><a href="index.html">Home</a></button>
       </div>
       <div class="col">
         <button class="btn btn-success btn-block" id="ncRefButton"><a href="https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388" target="_blank">National Curriculum KS3 Reference</a></button>
@@ -132,43 +101,13 @@
   </div>
 </div>   
         <!-- Image and 2-player button -->
-        <div class="row mt-3 center">
-          <div class="col image-container">
-              <img src="https://www.infoseriestv.com/wp-content/uploads/2012/03/The-Big-Bang-Theory.jpg" alt="The Big Bang Theory" width="300" height="200">
+        <div class="row mt-3 center ">
+          <div class="col image-container ">
+              <img class="rounded" src="https://www.infoseriestv.com/wp-content/uploads/2012/03/The-Big-Bang-Theory.jpg" alt="The Big Bang Theory" width="300" height="200">
           </div>
         </div>
     </div>
-
-    <script>
-        const teacherGuideButton = document.getElementById('teacherGuideButton');
-teacherGuideButton.addEventListener('click', async () => {
-    try {
-        // Construct the relative file path
-        const relativeFilePath = 'Hackathon2BC/assets/pdfs/Lesson Plan_ Exploring Probability with Rock, Paper, Scissors, Lizard, Spock.pdf';
-
-        // Fetch the content using the relative file path
-        const response = await fetch(relativeFilePath);
-        const textContent = await response.text();
-
-        // Log the content (you can modify this part as needed)
-        console.log(textContent);
-    } catch (error) {
-        console.error('Error fetching the document:', error);
-    }
-});
-        const ncRefButton = document.getElementById('ncRefButton');
-ncRefButton.addEventListener('click', function () {
-    fetch('https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388')
-        .then(response => response.text())
-        .then(textContent => {
-            console.log(textContent);
-        })
-        .catch(error => {
-            console.error('Error fetching the document:', error);
-            });
-        });    
-    </script>
-    
+</main>
     <footer class="footer">
         <ul class="nav justify-content-end">
           <li class="nav-item">
@@ -193,6 +132,15 @@ ncRefButton.addEventListener('click', function () {
           </li>
         </ul>
     </footer>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/247c7def27.js" crossorigin="anonymous"></script>
+    
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 
