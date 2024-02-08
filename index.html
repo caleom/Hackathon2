@@ -28,29 +28,29 @@
     <h1 id="header">
       <div class="container-fluid justify-content-center text-nowrap">
         <div class="row text-center">
-          <div class="col-6 col-md-4 col-lg-2 col-xl-2"><span class="d-none d-sm-block">R<img class="o"
+          <div class="col-2 col-sm-4 col-md-4 col-lg-2 col-xl-2"><span class="d-none d-sm-block">R<img class="o"
                 src="assets/img/rock.png" style="margin-bottom: 0px; opacity: 1; visibility: visible;">ck</span><span
               class="d-block d-sm-none"><img class="o" src="assets/img/rock.png"
                 style="margin-bottom: 0px; opacity: 1; visibility: visible;"></span>
           </div>
-          <div class="col-6 col-md-4 col-lg-2 col-xl-2"><span class="d-none d-sm-block">P<img class="a"
+          <div class="col-2 col-sm-4 col-md-4 col-lg-2 col-xl-2"><span class="d-none d-sm-block">P<img class="a"
                 src="assets/img/paper.png"
                 style="margin-bottom: 10px; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;">per</span><span
               class="d-block d-sm-none"><img class="a" src="assets/img/paper.png"
                 style="margin-bottom: 10px; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;"></span>
           </div>
-          <div class="col-12 col-md-4 col-lg-4 col-xl-3"><span class="d-none d-sm-block">S<img class="c" src="assets/img/scissors.png"
+          <div class="col-3 col-md-4 col-lg-4 col-xl-3"><span class="d-none d-sm-block">S<img class="c" src="assets/img/scissors.png"
                 style="margin-right: 0px; margin-left: 3px; opacity: 1; visibility: visible;">issors</span><span class="d-block d-sm-none"><img
                 class="c" src="assets/img/scissors.png"
                 style="margin-right: 0px; margin-left: 3px; opacity: 1; visibility: visible;"></span></div>
 
-          <div class="col-6 col-md-6 col-lg-2 col-xl-3"><span class="d-none d-sm-block">
+          <div class="col-2 col-sm-6 col-md-6 col-lg-2 col-xl-3"><span class="d-none d-sm-block">
             Li<img class="z" src="assets/img/lizard.png"
               style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;">ard</span><span class="d-block d-sm-none"><img class="z" src="assets/img/lizard.png"
                 style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;"></span>
           </div>
 
-          <div class="col-6 col-md-6 col-lg-2 col-xl-2"><span class="d-none d-sm-block">
+          <div class="col-3 col-sm-6 col-md-6 col-lg-2 col-xl-2"><span class="d-none d-sm-block">
             Sp<img class="o2" src="assets/img/spock.png"
               style="opacity: 1; visibility: visible; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">ck</span><span class="d-block d-sm-none"><img class="o2" src="assets/img/spock.png"
                 style="opacity: 1; visibility: visible; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);"></span>
@@ -80,8 +80,8 @@
           </div>
         </div>
         <div class="row">
-          <div id="userScore" class="col">
-            Player Score:
+          <div  class="col">
+            <span id="userName">Player Score:</span><span id="userScore"></span>
           </div>
         </div>
       </div>
@@ -119,6 +119,19 @@
       <div class="text-center" id="finishSection">
         <button class="finishBtn">End</button>
         <button class="rulesBtn"><a href="rules.html">Rules</a></button>
+        <button id="resultsModalButton">Modal</button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div id="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
       </div>
 
   </main>
