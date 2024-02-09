@@ -2,7 +2,7 @@
 
  **Rock, Paper, Scissors, Lizard, Spock ** aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game.
 
- ![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+ ![Responsive Mockup](https://github.com/bvelizmera/Hackathon2_bill/blob/main/assets/img/responsive_mockup.png)
  
 ##Table of Contents
 - [Features](#features)
@@ -26,7 +26,7 @@ This website was made by a composition of different features. For the overall de
 		- Five buttons with the respective icon of the desired move by the player.
 		- When a choice is made, the game will display the user's move and the computer moves, finally showing who's the winner of the round.
 		- The winner is declared in a best of 5 games.
-		- The game will finally display two different messages on screen depending on whether the user wins or loses.
+		- The game will finally display two different message on screen followed by a sound depending on whether the user wins or loses.
 		- Finally, it also includes a rules page to comprehend the game and reset button to restart the game.
 		
 		Include picture here
