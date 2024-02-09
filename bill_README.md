@@ -74,6 +74,7 @@ The live link can be found here - https://caleom.github.io/Hackathon2/
 - The icons in the header were taken from [RPSLS](https://rpsls.net/#vis1d).
 - The Teacher Probability Plan was self-created.
 - The National Curriculum KS3 Preference was taken from [NCTEM](https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388)
+- [ChatGPT](https://chat.openai.com/) was also used as a support for the generation of resources, e.g., 
 ### Media
 - The header's cloud image was taken from [Wallpaper Flare](https://www.wallpaperflare.com/clouds-figure-background-simpsons-art-beginning-cartoon-wallpaper-uzhuk).
 - The image picture of the character Sheldon Cooper from The Big Bang Theory and Captain Spock from Star Treck was taken from [InfoSeriesTv](https://www.infoseriestv.com/wp-content/uploads/2012/03/The-Big-Bang-Theory.jpg)
