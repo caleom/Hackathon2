@@ -8,6 +8,7 @@
 
 - [Features](#features)
 - [Features left to implement](#features-left-to-implement)
+- [Future features](#Future)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -65,6 +66,10 @@ This website was made by a composition of different features. For the overall de
 - Timer
 - Quiz
 
+## Future Features
+
+When we started this project we assumed that game would best suit very young children in the 4-7 year old category. However as we progressed with our research we realised that it is the 11-14 year old age range that study Probability as part of the National Curriculums in England and Wales. We only had time to include produce one suitable lesson plan on this topic as content to supplement the game itself. However we realised that there is a whole Scheme of Work that could be developed from this game utilising multiple lesson plans. Therefore for future iterations of this product we would like to introduce some live video or animated explanatons of how to calculated the game probabilities together with several interactive quizzes, and of course the lesson plans to enable teachers, parents, and students to be able to use the product to obtain most educational benefits. 
+
 ## Testing
 
 We completed alot of the responsiveness and function testing as we went along. After a new feature was added to our project we would then run the site through dev tools checking different device sizes to ensure responsiveness and features were working as expected. We had a slight stuggle with the header, ensuring the words pushed down into imgs when on smaller devices. However after spending some time referring to the bootstrap wesbite we were able to accomplish what we set out.
@@ -108,6 +113,10 @@ For browser testing we used https://www.browserling.com as well as our own devic
 <img src="./assets/img/lighthouse - index.png" alt="Lighthouse Index Page">
 <img src="./assets/img/lighthouse - rules.png" alt="Lighthouse Rules Page">
 
+**User Experience Testing**
+We asked two Maths teachers to test our project and obtained verbal feedback. They both responded that they liked the site and felt that it could be useful used in the right home or class context. They were content that the lesson plan was suitable for our target age range, and said that the game was visually appealing. Homework Quizz games based on calculating probabilties was suggested as a future feature. 
+We also asked a group of parents and children of the target age range for their opinion. All said the game was easy to understand, fun to play, and that it worked on a variety of screen sizes.  
+
 - **Unfixed Bugs**
   Input field accepts special characters and numbers. We tried to resolve VIA pattern attribute in HTML however this would not work as the input field was not posting or getting. However we use .value in javascript to pull it out the input field and apply it with userscore. The work around is a javascript regex that pulls out the numbers and special characters before applying to user score after researching and help of chatGPT.
 
@@ -120,9 +129,11 @@ For browser testing we used https://www.browserling.com as well as our own devic
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - https://caleom.github.io/Hackathon2/
+The live link can be found here - https:/[/caleom.github.io/Hackathon2/]
 
 ## Credits
+
+- User Experience Testers were members of "ALN Cymru - HE & EOTAS", a parent peer support network for those educated outside school in Wales. This was simply because these were the people we had time to ask to view and test the finished product within the time constraints of this project. 
 
 ### Content
 
@@ -134,6 +145,13 @@ The live link can be found here - https://caleom.github.io/Hackathon2/
 - The Teacher Probability Plan was self-created.
 - The National Curriculum KS3 Preference was taken from [NCTEM](https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388)
 - [ChatGPT](https://chat.openai.com/) was also used as a support for the generation and research of resources.
+- Lesson plan reference 1 [https://math.stackexchange.com/questions/376187/probability-game]
+- Lesson plan reference 2 [https://medium.com/@neelymann/how-to-java-lizard-spock-f1069952012b]
+- Lesson plan reference 3 [https://www.naturphilosophie.co.uk/winning-rock-paper-scissors-lizard-spock/]
+- Lesson plan reference 4 [https://www.reddit.com/r/theydidthemath/comments/vp21x6/request_rock_paper_scissors_lizard_spock/]
+
+
+
 ### Media
 
 - The header's cloud image was taken from [Wallpaper Flare](https://www.wallpaperflare.com/clouds-figure-background-simpsons-art-beginning-cartoon-wallpaper-uzhuk).
