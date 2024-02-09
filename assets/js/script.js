@@ -17,62 +17,31 @@ window.addEventListener("load", () => {
   nameButton.addEventListener("click", handleName);
 
   function handleName() {
-    const nameField = document.getElementById("nameInput").value;
-    const nameUpdate = document.getElementById("userName");
+    let nameField = document.getElementById("nameInput").value;
+    let nameUpdate = document.getElementById("userName");
+
+    nameField = extractLetters(nameField)
+
     nameUpdate.innerText = `${nameField}'s score:`;
+    // remove input area after submit.
+    let section = document.querySelector("section");
+    section.style.visibility = "hidden";
   }
 
-  // eventtlistener + function for start game button (
-  // document.querySelector(".startBtn").addEventListener("click", clickedStart());
-
-  // function clickedStart() {
-  //   document.getElementById("userScore").textContent = "Player Score: 0";
-  //   document.getElementById("compScore").textContent = "Comp Score: 0";
-  //   // resets score to 0
-  //   userScore = 0;
-  //   compScore = 0;
-  // }
-
-  // eventtlistener + function for finish game button
-  // document.querySelector(".finishBtn").addEventListener("click", clickedFinish());
-
-  // function clickedFinish() {
-  //   let play = document.querySelector("#gameScreen");
-  //   let finish = document.querySelector("#endScreen");
-
-  //   play.style.display = "none";
-  //   finish.style.display = "block";
-  // }
-
-  // eventtlistener + function for restart game button
-  // document.querySelector(".resetBtn").addEventListener("click", clickedReset());
-
-  // function clickedReset() {
-  //   let finish = document.querySelector("#endScreen");
-  //   let home = document.querySelector("#homePage");
-
-  //   finish.style.display = "none";
-  //   home.style.display = "block";
-  // }
   // function for .choice buttons
   function handleChoice(e) {
     //grabs userchoice//
     let userChoice = e.target.id;
     //generates computer choice//
     let computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    // updated the choices in HTML
-    // document.getElementById(
-    //   "playerDisplay"
-    // ).textContent = `Player: ${userChoice}`;
-    // document.getElementById(
-    //   "computerDisplay"
-    // ).textContent = `Computer: ${computerChoice}`;
-    // then runs the determineWinner function below
+
     determineWinner(userChoice, computerChoice);
   }
 
   function determineWinner(userChoice, computerChoice) {
     let roundLimit = 5;
+    let userScore = document.getElementById("userScore").innerText
+    let compScore = document.getElementById("compScore").innerText
 
     const winConditions = {
       rock: ["scissors", "spock"],
@@ -85,27 +54,26 @@ window.addEventListener("load", () => {
     // check if user has won and updates HTML with result of round + increments score.
     if (winConditions[userChoice].includes(computerChoice)) {
       document.getElementById("resultDisplay").innerText = "You Win👍";
-      ++userScore;
+      userScore++;
     } else if (computerChoice === userChoice) {
       document.getElementById("resultDisplay").innerText = "It's a tie👔";
     } else {
       document.getElementById("resultDisplay").innerText = "Computer Wins👎";
-      ++compScore;
+      compScore++;
     }
 
     // update scoreboard
     document.getElementById("userScore").textContent = `${userScore}`;
-    document.getElementById(
-      "compScore"
-    ).textContent = `Comp Score: ${compScore}`;
+    document.getElementById("compScore").textContent = `${compScore}`;
+
+    updateVs(userChoice, computerChoice);
 
     if (userScore > roundLimit / 2) {
       showResults("user");
+      
     } else if (compScore > roundLimit / 2) {
       showResults("comp");
     }
-
-    updateVs(userChoice, computerChoice);
   }
 });
 
@@ -124,22 +92,59 @@ function updateVs(player1, player2) {
   vsBox.innerText = `${emoji[player1]} VS ${emoji[player2]}`;
 }
 
-const modalButton = document.getElementById("resultsModalButton");
-
-modalButton.addEventListener("click", showResults);
-
 //results modal
 function showResults(data) {
+
+  //variables for game sounds
+  const win = new Audio('assets/sound/win.wav');
+  const lose = new Audio('assets/sound/lose.wav');
+
   const resultModal = new bootstrap.Modal(
     document.getElementById("resultModal")
   );
   let content = document.getElementById("modal-body");
 
   if (data === "user") {
-    content.innerText = "userwon";
+    win.play();
+    content.innerHTML = `⭐You won!⭐<br>
+                        Play again to see if you succeed again<br>
+                        <i class="h1 fa-solid fa-trophy fa-beat" style="color: #e6b755;"></i>`;
   } else if (data === "comp") {
-    content.innerText = "compwon";
+    lose.play();
+    content.innerHTML = `😭You lost😭<br>
+                          Play again to win!<br>
+                          <i class="h1 fa-solid fa-skull-crossbones fa-shake" style="color: #fe0107;"></i>`;
   }
-
+  handleReset();
   resultModal.show();
+  
+}
+
+// Event listener for the reset button
+const resetButton = document.querySelector(".resetBtn");
+resetButton.addEventListener("click", handleReset);
+
+// Function to handle resetting the game
+function handleReset() {
+  userScore = 0;
+  compScore = 0;
+
+  // makes input field avail again
+  let section = document.querySelector("section");
+  section.style.visibility = "visible";
+
+  // Reset player name and scores in the UI
+  document.getElementById("nameInput").value = "";
+  document.getElementById("userName").innerText = `Player Score:`;
+  document.getElementById("userScore").innerText = `0`;
+  document.getElementById("compScore").innerText = `0`;
+  document.getElementById("vsBox").innerText = "VS";
+  document.getElementById("resultDisplay").innerText = " ";
+}
+
+function extractLetters(inputString) {
+  // Use a regular expression to match only letters (A-Z, a-z)
+  const lettersOnly = inputString.replace(/[^a-zA-Z\s]/g, '');
+
+  return lettersOnly;
 }
