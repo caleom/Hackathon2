@@ -35,12 +35,15 @@ h1 {
 /**/
 body {
   background-color: var(--primary);
+  height: 100svh;
+ 
 }
 
 main {
   font-weight: bold;
   font-family: "Ysabeau Infant", sans-serif;
   font-size: clamp(1rem, 2.5vw, 3rem);
+  padding-bottom: 60px;
 }
 
 /**Main**/
@@ -230,3 +233,5 @@ a {
 .image-container {
   text-align: center;
 }
+
+

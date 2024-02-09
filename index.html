@@ -62,7 +62,7 @@
   <!--Username input section-->
   <section>
     <div id="usernameArea" class="text-center">
-      <input type="text" id="nameInput" maxlength="20" placeholder="Enter your name here" aria-label="Field to input your name" required pattern="[a-z]">
+      <input type="text" id="nameInput" maxlength="20" placeholder="Enter your name here" aria-label="Field to input your name" required pattern="[a-zA-Z][^0-9]">
       <input type="button" id="submitBtn" value="Enter" aria-label="Submit button for your name">
     </div>
   </section>
@@ -120,7 +120,7 @@
       </div>
 
       <!-- Modal -->
-      <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      <div class="modal fade" id="resultModal" tabindex="-1"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
