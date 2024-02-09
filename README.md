@@ -12,19 +12,6 @@
 - [Deployment](#deployment)
 - [Credits](#credits)
 
-# Project Outline
-
-This project aims to provide a digital version of an inter-generational popular game. While the primary audience is young children aged between 8 and 11 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game. 
-
-Explanation of the original game, original Rock, Paper, Scissors:
- - Both players start by choosing either rock, paper, or scissors.
-If their choices are the same, it’s a tie.
-Otherwise, we check if Player 1’s choice beats Player 2’s choice to determine the winner.
-
-
-Diagram created using Creatley https://creately.com/diagram/example/i3aimqf11/rock-paper
-
-
 ## Features
 
 This website was made by a composition of different features. For the overall design of the game, vibrant colours were chosen with the purpose of creating a vivid, vibrant and captivating website.
