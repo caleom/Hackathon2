@@ -94,10 +94,14 @@ We completed a lot of the responsiveness and function testing as we went along. 
 </div>
 
 - CSS
+  <div align="center">
     <img src="./assets/img/W3 CSS Validator.png" alt="CSS Validator">
+  </div>
 
-- Javascript
+- Javascript  
+  <div align="center">
     <img src="./assets/img/JSHIN_Output.png" alt="JSHint Output">
+  </div>
 
 - **Responsiveness Testing**
 
