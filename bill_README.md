@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors, Lizard, Spock
 
- **Rock, Paper, Scissors, Lizard, Spock ** aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game.
+ **Rock, Paper, Scissors, Lizard, Spock** aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game.
 
  ![Responsive Mockup](https://github.com/caleom/Hackathon2/blob/main/assets/img/responsive_mockup.png)
  
@@ -32,7 +32,7 @@ This website was made by a composition of different features. For the overall de
 		- The game will finally display two different message on screen followed by a sound depending on whether the user wins or loses.
 		- Finally, it also includes a rules page to comprehend the game and reset button to restart the game.
 		
-		![Game Section]()
+		![Game Section](https://github.com/caleom/Hackathon2/blob/main/assets/img/game-section.png)
 - __Footer__
 	- The footer includes links to the GitHub pages of each collaborator. It will open on a new tab to allow easy navigation for the user.
 	- It is a valuable feature, since it will allow future employers to have an easy access to other projects made by the team members.
