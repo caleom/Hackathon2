@@ -128,6 +128,10 @@ For browser testing we used https://www.browserling.com as well as our own devic
 We asked two Maths teachers to test our project and obtained verbal feedback. They both responded that they liked the site and felt that it could be useful used in the right home or class context. They were content that the lesson plan was suitable for our target age range, and said that the game was visually appealing. Homework Quizz games based on calculating probabilties was suggested as a future feature.
 We also asked a group of parents and children of the target age range for their opinion. All said the game was easy to understand, fun to play, and that it worked on a variety of screen sizes.
 
+## Design
+
+The UX design was made in balsamiq. See the wireframes [here](assets/pdfs/Wireframes.pdf)
+
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
