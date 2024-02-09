@@ -84,22 +84,22 @@ We completed a lot of the responsiveness and function testing as we went along. 
 
 - **Validator Testing**
 
-- HTML.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
+ - HTML.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
 <div align-"center">
  <img width="871" alt="index-w3v" src="https://github.com/caleom/Hackathon2/assets/153097035/90039030-f3b9-4a6b-81a0-e5e4749ae86b">
 </div>
 
-- Rules.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
+ - Rules.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
 <div align="center">
   <img src="./assets/img/rules W3 validator.jpg" alt="Rules HTML Validator">
 </div>
 
-- CSS
+ - CSS
   <div align="center">
     <img src="./assets/img/W3 CSS Validator.png" alt="CSS Validator">
   </div>
 
-- Javascript  
+ - Javascript  
   <div align="center">
     <img src="./assets/img/JSHIN_Output.png" alt="JSHint Output">
   </div>
@@ -125,12 +125,14 @@ For browser testing we used https://www.browserling.com as well as our own devic
   <img src="./assets/img/Safari index bug .jpg" alt="Lighthouse Index Page">
 
 - **Lighthouse**
+  
   You will see our lighthouse reports are not perfect, main suggestions were the img increasing page loading time. However we as a team feels the pages load is sufficent time.
 
 <img src="./assets/img/lighthouse - index.png" alt="Lighthouse Index Page">
 <img src="./assets/img/lighthouse - rules.png" alt="Lighthouse Rules Page">
 
 - **Unfixed Bugs**
+  
   Input field accepts special characters and numbers. We tried to resolve VIA pattern attribute in HTML however this would not work as the input field was not posting or getting. However we use .value in javascript to pull it out the input field and apply it with userscore. The work around is a javascript regex that pulls out the numbers and special characters before applying to user score after researching and help of chatGPT.
 
 <img src="./assets/img/input field bug.png" alt="Lighthouse Rules Page">
