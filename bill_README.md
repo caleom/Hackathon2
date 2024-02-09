@@ -72,14 +72,15 @@ We completed alot of the responsiveness and function testing as we went along. A
 - **Validator Testing**
 
 - HTML
+
   !- insert index html w3c-!
   !- insert rules html w3c-!
 
 - CSS
-  !- insert Syle.css w3c-!
+    <img src="./assets/img/W3 CSS Validator.png" alt="CSS Validator">
 
 - Javascript
-  !- insert script.js w3c-!
+    <img src="./assets/img/JSHIN_Output.png" alt="JSHint Output">
 
 - **Responsiveness Testing**
 
@@ -102,7 +103,7 @@ For browser testing we used https://www.browserling.com as well as our own devic
   <img src="./assets/img/Safari index bug .jpg" alt="Lighthouse Index Page">
 
 - **Lighthouse**
-  You will see our lighthouse reports are not perfect, main suggestions were the img increasing page loading time. However we as a team feels the pages load in sufficent time.
+  You will see our lighthouse reports are not perfect, main suggestions were the img increasing page loading time. However we as a team feels the pages load is sufficent time.
 
 <img src="./assets/img/lighthouse - index.png" alt="Lighthouse Index Page">
 <img src="./assets/img/lighthouse - rules.png" alt="Lighthouse Rules Page">
@@ -132,7 +133,7 @@ The live link can be found here - https://caleom.github.io/Hackathon2/
 - The icons in the header were taken from [RPSLS](https://rpsls.net/#vis1d).
 - The Teacher Probability Plan was self-created.
 - The National Curriculum KS3 Preference was taken from [NCTEM](https://www.ncetm.org.uk/in-the-classroom/national-curriculum-resource-tool/?topic=1388)
-
+- [ChatGPT](https://chat.openai.com/) was also used as a support for the generation and research of resources.
 ### Media
 
 - The header's cloud image was taken from [Wallpaper Flare](https://www.wallpaperflare.com/clouds-figure-background-simpsons-art-beginning-cartoon-wallpaper-uzhuk).
