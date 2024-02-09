@@ -1,167 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta tags for search engines-->
+    <meta
+      name="description"
+      content="Rock, papers, Scissors kids game with the extra feature of spock and lizard"
+    />
+    <meta
+      name="keywords"
+      content="games, fun, kids, rock, paper, Scissors, spock, lizard"
+    />
 
-  <!--Meta tags for search engines-->
-  <meta name="description" content="Rock, papers, Scissors kids game with the extra feature of spock and lizard">
-  <meta name="keywords" content="games, fun, kids, rock, paper, Scissors, spock, lizard">
+    <!--Title-->
+    <title>Rock, Paper, Scissors</title>
 
-  <!--Title-->
-  <title>Rock, Paper, Scissors</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
 
-  <!--Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <!--CSS-->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+  <body>
+    <!--Header-->
+    <header>
+      <div id="header">
+        <div class="container-fluid justify-content-center text-nowrap">
+          <div class="row text-center">
+            <div class="col-2 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+              <span class="d-none d-sm-block"
+                >R<img
+                  class="o"
+                  src="assets/img/rock.png"
+                  style="margin-bottom: 0px; opacity: 1; visibility: visible"
+                  alt="image of a rock"
+                />ck</span
+              ><span class="d-block d-sm-none"
+                ><img
+                  class="o"
+                  src="assets/img/rock.png"
+                  style="margin-bottom: 0px; opacity: 1; visibility: visible"
+                  alt="image of a rock"
+              /></span>
+            </div>
+            <div class="col-2 col-sm-4 col-md-4 col-lg-2 col-xl-2">
+              <span class="d-none d-sm-block"
+                >P<img
+                  class="a"
+                  src="assets/img/paper.png"
+                  style="
+                    margin-bottom: 10px;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                    opacity: 1;
+                    visibility: visible;
+                  "
+                  alt="image of paper"
+                />per</span
+              ><span class="d-block d-sm-none"
+                ><img
+                  class="a"
+                  src="assets/img/paper.png"
+                  style="
+                    margin-bottom: 10px;
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                    opacity: 1;
+                    visibility: visible;
+                  "
+                  alt="image of paper"
+              /></span>
+            </div>
+            <div class="col-3 col-md-4 col-lg-4 col-xl-3">
+              <span class="d-none d-sm-block"
+                >S<img
+                  class="c"
+                  src="assets/img/scissors.png"
+                  style="
+                    margin-right: 0px;
+                    margin-left: 3px;
+                    opacity: 1;
+                    visibility: visible;
+                  "
+                  alt="image of scissors"
+                />issors</span
+              ><span class="d-block d-sm-none"
+                ><img
+                  class="c"
+                  src="assets/img/scissors.png"
+                  style="
+                    margin-right: 0px;
+                    margin-left: 3px;
+                    opacity: 1;
+                    visibility: visible;
+                  "
+                  alt="image of scissors"
+              /></span>
+            </div>
 
-<body>
-  <!--Header-->
-  <header>
-    <div id="header">
-      <div class="container-fluid justify-content-center text-nowrap">
-        <div class="row text-center">
-          <div class="col-2 col-sm-4 col-md-4 col-lg-2 col-xl-2"><span class="d-none d-sm-block">R<img class="o"
-                src="assets/img/rock.png" style="margin-bottom: 0px; opacity: 1; visibility: visible;" alt="image of a rock">ck</span><span
-              class="d-block d-sm-none"><img class="o" src="assets/img/rock.png"
-                style="margin-bottom: 0px; opacity: 1; visibility: visible;" alt="image of a rock"></span>
-          </div>
-          <div class="col-2 col-sm-4 col-md-4 col-lg-2 col-xl-2"><span class="d-none d-sm-block">P<img class="a"
-                src="assets/img/paper.png" 
-                style="margin-bottom: 10px; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;" alt="image of paper">per</span><span
-              class="d-block d-sm-none"><img class="a" src="assets/img/paper.png"
-                style="margin-bottom: 10px; transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;" alt="image of paper"></span>
-          </div>
-          <div class="col-3 col-md-4 col-lg-4 col-xl-3"><span class="d-none d-sm-block">S<img class="c" src="assets/img/scissors.png"
-                style="margin-right: 0px; margin-left: 3px; opacity: 1; visibility: visible;" alt="image of scissors">issors</span><span class="d-block d-sm-none"><img
-                class="c" src="assets/img/scissors.png"
-                style="margin-right: 0px; margin-left: 3px; opacity: 1; visibility: visible;" alt="image of scissors"></span></div>
+            <div class="col-2 col-sm-6 col-md-6 col-lg-2 col-xl-3">
+              <span class="d-none d-sm-block">
+                Li<img
+                  class="z"
+                  src="assets/img/lizard.png"
+                  style="
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                    opacity: 1;
+                    visibility: visible;
+                  "
+                  alt="image of a lizard"
+                />ard</span
+              ><span class="d-block d-sm-none"
+                ><img
+                  class="z"
+                  src="assets/img/lizard.png"
+                  style="
+                    transform: matrix(1, 0, 0, 1, 0, 0);
+                    opacity: 1;
+                    visibility: visible;
+                  "
+                  alt="image of a lizard"
+              /></span>
+            </div>
 
-          <div class="col-2 col-sm-6 col-md-6 col-lg-2 col-xl-3"><span class="d-none d-sm-block">
-            Li<img class="z" src="assets/img/lizard.png"
-              style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;" alt="image of a lizard">ard</span><span class="d-block d-sm-none"><img class="z" src="assets/img/lizard.png"
-                style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1; visibility: visible;" alt="image of a lizard"></span>
-          </div>
-
-          <div class="col-3 col-sm-6 col-md-6 col-lg-2 col-xl-2"><span class="d-none d-sm-block">
-            Sp<img class="o2" src="assets/img/spock.png"
-              style="opacity: 1; visibility: visible; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" alt="image of spock">ck</span><span class="d-block d-sm-none"><img class="o2" src="assets/img/spock.png"
-                style="opacity: 1; visibility: visible; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" alt="image of spock"></span>
-          </div>
-        </div>
-        </div>
-      </div>
-  </header>
-
-  <!--Username input section-->
-  <section>
-    <div id="usernameArea" class="text-center">
-      <input type="text" id="nameInput" maxlength="20" placeholder="Enter your name here" aria-label="Field to input your name" required pattern="[a-zA-Z][^0-9]">
-      <input type="button" id="submitBtn" value="Enter" aria-label="Submit button for your name">
-    </div>
-  </section>
-  
-  <!--Main-->
-  <!--Game Area-->
-  <main class="overflow-hidden text-center">
-    <div id="gameScreen" class="top-row row">
-      <div class="column1 col border">
-        <div class="row">
-          <div id="playerDisplay" class="col">
-
-          </div>
-        </div>
-        <div class="row">
-          <div  class="col">
-            <span id="userName">Player Score:</span><span id="userScore">0</span>
-          </div>
-        </div>
-      </div>
-      <div class="column2 col">
-        <div class="vs-row row border">
-          <div id=vsBox class="col">VS</div>
-        </div>
-        <div class="timer-row row border">
-          <div id="resultDisplay" class="col"></div>
-        </div>
-      </div>
-      <div class="colum3 col border">
-        <div class="row">
-          <div id="computerDisplay" class="col">
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <span id="compName">Computer Score:</span><span id="compScore">0</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="choices-row row text-center border">
-        <div class="col">
-          <button class="choiceBtn" id="rock">👊</button>
-          <button class="choiceBtn" id="paper">🗞️</button>
-          <button class="choiceBtn" id="scissors">✂️</button>
-          <button class="choiceBtn" id="spock">🖖</button>
-          <button class="choiceBtn" id="lizard">🦎</button>
-        </div>
-      </div>
-
-      <div class="text-center" id="finishSection">
-        <button class="rulesBtn"><a href="rules.html">Rules</a></button>
-        <button class="resetBtn">Reset</button>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="resultModal" tabindex="-1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div id="modal-body">
-              ...
+            <div class="col-3 col-sm-6 col-md-6 col-lg-2 col-xl-2">
+              <span class="d-none d-sm-block">
+                Sp<img
+                  class="o2"
+                  src="assets/img/spock.png"
+                  style="
+                    opacity: 1;
+                    visibility: visible;
+                    transform: matrix3d(
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    );
+                  "
+                  alt="image of spock"
+                />ck</span
+              ><span class="d-block d-sm-none"
+                ><img
+                  class="o2"
+                  src="assets/img/spock.png"
+                  style="
+                    opacity: 1;
+                    visibility: visible;
+                    transform: matrix3d(
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                      0,
+                      0,
+                      1
+                    );
+                  "
+                  alt="image of spock"
+              /></span>
             </div>
           </div>
         </div>
       </div>
+    </header>
 
-  </main>
+    <!--Username input section-->
+    <section>
+      <div id="usernameArea" class="text-center">
+        <h1 class="d-none">gamearea</h1>
+        <input
+          type="text"
+          id="nameInput"
+          maxlength="20"
+          placeholder="Enter your name here"
+          aria-label="Field to input your name"
+          required
+          pattern="[a-zA-Z][^0-9]"
+        />
+        <input
+          type="button"
+          id="submitBtn"
+          value="Enter"
+          aria-label="Submit button for your name"
+        />
+      </div>
+    </section>
 
-  <!--footer -->
-  <footer class="footer">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a href="https://github.com/StephShobiye" target="_blank"><i class="fa-brands fa-github"></i> Steph</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/BenFash" target="_blank"><i class="fa-brands fa-github"></i> Ben</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/caleom" target="_blank"><i class="fa-brands fa-github"></i> Liam</a>
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/bvelizmera" target="_blank"><i class="fa-brands fa-github"></i> Bill</a>
-      </li>
-    </ul>
-  </footer>
+    <!--Main-->
+    <!--Game Area-->
+    <main class="overflow-hidden text-center">
+      <div id="gameScreen" class="top-row row">
+        <div class="column1 col border">
+          <div class="row">
+            <div id="playerDisplay" class="col"></div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span id="userName">Player Score:</span
+              ><span id="userScore">0</span>
+            </div>
+          </div>
+        </div>
+        <div class="column2 col">
+          <div class="vs-row row border">
+            <div id="vsBox" class="col">VS</div>
+          </div>
+          <div class="timer-row row border">
+            <div id="resultDisplay" class="col"></div>
+          </div>
+        </div>
+        <div class="colum3 col border">
+          <div class="row">
+            <div id="computerDisplay" class="col"></div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <span id="compName">Computer Score:</span
+              ><span id="compScore">0</span>
+            </div>
+          </div>
+        </div>
 
-  <!-- Bootstrap Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        <div class="choices-row row text-center border">
+          <div class="col">
+            <button class="choiceBtn" id="rock">👊</button>
+            <button class="choiceBtn" id="paper">🗞️</button>
+            <button class="choiceBtn" id="scissors">✂️</button>
+            <button class="choiceBtn" id="spock">🖖</button>
+            <button class="choiceBtn" id="lizard">🦎</button>
+          </div>
+        </div>
 
-  <!-- Font Awesome Script -->
-  <script src="https://kit.fontawesome.com/247c7def27.js" crossorigin="anonymous"></script>
+        <div class="text-center" id="finishSection">
+          <button class="rulesBtn"><a href="rules.html">Rules</a></button>
+          <button class="resetBtn">Reset</button>
+        </div>
 
-  <!-- Javascript -->
-  <script src="assets/js/script.js"></script>
-</body>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="resultModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div id="modal-body">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
+    <!--footer -->
+    <footer class="footer">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a href="https://github.com/StephShobiye" target="_blank"
+            ><i class="fa-brands fa-github"></i> Steph</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/BenFash" target="_blank"
+            ><i class="fa-brands fa-github"></i> Ben</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/caleom" target="_blank"
+            ><i class="fa-brands fa-github"></i> Liam</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/bvelizmera" target="_blank"
+            ><i class="fa-brands fa-github"></i> Bill</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome Script -->
+    <script
+      src="https://kit.fontawesome.com/247c7def27.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
