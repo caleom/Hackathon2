@@ -71,17 +71,17 @@ We completed a lot of the responsiveness and function testing as we went along. 
 
 - **Validator Testing**
 
- - HTML.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
+  - HTML.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
 <div align-"center">
  <img width="871" alt="index-w3v" src="https://github.com/caleom/Hackathon2/assets/153097035/90039030-f3b9-4a6b-81a0-e5e4749ae86b">
 </div>
 
- - Rules.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
+  - Rules.html Validator result. An a tag inside the button was the simplest way to make a button a link so we decided to keep that HTML
 <div align="center">
   <img src="./assets/img/rules W3 validator.jpg" alt="Rules HTML Validator">
 </div>
 
- - CSS
+  - CSS
   <div align="center">
     <img src="./assets/img/W3 CSS Validator.png" alt="CSS Validator">
   </div>
