@@ -2,10 +2,6 @@ window.addEventListener("load", () => {
   // Array with game options//
   const choices = ["rock", "paper", "scissors", "spock", "lizard"];
 
-  //varables to keep track of scores
-  let userScore = 0;
-  let compScore = 0;
-
   //  event listeners for all choicebuttons class and adds the handle choice functions to it //
   const optionButtons = document.querySelectorAll(".choiceBtn");
   optionButtons.forEach((button) =>
@@ -20,7 +16,7 @@ window.addEventListener("load", () => {
     let nameField = document.getElementById("nameInput").value;
     let nameUpdate = document.getElementById("userName");
 
-    nameField = extractLetters(nameField)
+    nameField = extractLetters(nameField);
 
     nameUpdate.innerText = `${nameField}'s score:`;
     // remove input area after submit.
@@ -40,8 +36,8 @@ window.addEventListener("load", () => {
 
   function determineWinner(userChoice, computerChoice) {
     let roundLimit = 5;
-    let userScore = document.getElementById("userScore").innerText
-    let compScore = document.getElementById("compScore").innerText
+    let userScore = document.getElementById("userScore").innerText;
+    let compScore = document.getElementById("compScore").innerText;
 
     const winConditions = {
       rock: ["scissors", "spock"],
@@ -126,8 +122,6 @@ resetButton.addEventListener("click", handleReset);
 
 // Function to handle resetting the game
 function handleReset() {
-  userScore = 0;
-  compScore = 0;
 
   // makes input field avail again
   let section = document.querySelector("section");
