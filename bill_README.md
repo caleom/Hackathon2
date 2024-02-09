@@ -4,7 +4,7 @@
  
  ![Responsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
  
-##Table of Contents
+## Table of Contents
 - [Features](#features)
 - [Features left to implement](#features-left-to-implement)
 
