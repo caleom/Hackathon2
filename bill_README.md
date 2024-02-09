@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors, Lizard, Spock
 
- **Rock, Paper, Scissors, Lizard, Spock ** aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game.
+ **Rock, Paper, Scissors, Lizard, Spock** aims to provide a digital version of an intergenerationally popular game. While the primary audience is young children aged between 4 and 7 (KS1), it must also appeal to their parents as they would be the primary purchasers of such a game.
 
  ![Responsive Mockup](https://github.com/caleom/Hackathon2/blob/main/assets/img/responsive_mockup.png)
  
