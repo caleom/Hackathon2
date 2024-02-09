@@ -77,11 +77,9 @@ We completed alot of the responsiveness and function testing as we went along. A
   !- insert rules html w3c-!
 
 - CSS
-
     <img src="./assets/img/W3 CSS Validator.png" alt="CSS Validator">
 
 - Javascript
-
     <img src="./assets/img/JSHIN_Output.png" alt="JSHint Output">
 
 - **Responsiveness Testing**
