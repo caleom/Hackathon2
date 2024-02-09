@@ -32,7 +32,7 @@ This website was made by a composition of different features. For the overall de
 		- The game will finally display two different message on screen followed by a sound depending on whether the user wins or loses.
 		- Finally, it also includes a rules page to comprehend the game and reset button to restart the game.
 		
-		![Game Section]()
+		![Game Section](https://github.com/caleom/Hackathon2/blob/main/assets/img/game-section.png)
 - __Footer__
 	- The footer includes links to the GitHub pages of each collaborator. It will open on a new tab to allow easy navigation for the user.
 	- It is a valuable feature, since it will allow future employers to have an easy access to other projects made by the team members.
