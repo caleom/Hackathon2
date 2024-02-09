@@ -4,7 +4,7 @@
 
  ![Responsive Mockup](https://github.com/bvelizmera/Hackathon2_bill/blob/main/assets/img/responsive_mockup.png)
  
-##Table of Contents
+## Table of Contents
 - [Features](#features)
 - [Features left to implement](#features-left-to-implement)
 - [Testing](#testing)
@@ -16,6 +16,7 @@ This website was made by a composition of different features. For the overall de
 - __Header__
 	- The header is shown on both pages, the home page and rules page. The header is fully responsive. It includes the full name of the game, together with icons for larger screens, and it only displays the icons of the game for smaller screens thus saving screen space for the user.
 	- The header's purpose is to give a friendly and welcoming look to the user. By choosing bright and colourful colours, it is possible to make it more attractive to children.
+    ![Header Image](https://github.com/bvelizmera/Hackathon2_bill/blob/main/assets/img/game-header.png)
 
 - __Player's Name Section__
 	- The player's name section allows the user to enter and display their name on the screen when playing the game. Thus feeling more idenfitied and relating in a closer manner to the game.
