@@ -70,7 +70,7 @@ This website was made by a composition of different features. For the overall de
     - Home page button that will allow the user to return to the main page after reading the rules of the game.
     - National Curriculum KS3 Reference
 
-    ![Rules Page](https://github.com/caleom/Hackathon2/blob/main/assets/img/rules_page.png)
+    <img src="./assets/img/rules_page.png" alt="Rules Page">
 
 ## Features Left to Implement
 
